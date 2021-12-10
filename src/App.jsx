@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import Maria from "./assets/maria.jpg";
-import Logo from "./assets/Logo/Logo7.png";
+import Banner1 from "./assets/banner-1.png";
+import Banner2 from "./assets/banner-2.png";
+import Banner3 from "./assets/banner-4.png";
+import Logo from "./assets/Logo/Logo1.png";
 import Artwork1 from "./assets/Artwork/Artwork1.jpeg";
 import Artwork2 from "./assets/Artwork/Artwork2.jpeg";
 import Artwork3 from "./assets/Artwork/Artwork3.jpeg";
@@ -13,11 +16,12 @@ import Team3 from "./assets/Team/Team3.jfif";
 import Team4 from "./assets/Team/Team4.jfif";
 import "./App.css";
 import $ from "jquery";
-import { BsSuitSpadeFill } from "react-icons/bs";
+import { BsSuitSpadeFill, BsFillSuitDiamondFill } from "react-icons/bs";
 import {
   FaDiscord,
   FaTwitter,
   FaLinkedinIn,
+  FaRedditAlien,
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
@@ -96,7 +100,7 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section5",
-        offsetY: 30,
+        offsetY: 60,
       },
       ease: Power4.easeInOut,
     });
@@ -326,19 +330,25 @@ const App = () => {
         <div className="box">
           <div className="header-content">
             <img className="header-left" src={Logo} alt="img" />
-            <div className="header-right-mob">
-              <MdMenu className="mob-header-open" />
-              <MdClose className="mob-header-close" />
-            </div>
-            <div className="header-right">
-              <a onClick={moveTo1}>Welcome</a>
-              <a onClick={moveTo2}>Utility</a>
-              <a onClick={moveTo3}>Specs</a>
-              <a onClick={moveTo4}>Roadmap</a>
-              <a onClick={moveTo5}>Mint</a>
-              <a onClick={moveTo6}>Poker Ambassador</a>
-              <a onClick={moveTo7}>Team</a>
-              <a onClick={moveTo8}>FAQ</a>
+
+            <div className="header-right-parent">
+              <div className="header-right">
+                <a onClick={moveTo1}>Welcome</a>
+                <a onClick={moveTo2}>Utility</a>
+                <a onClick={moveTo3}>Specs</a>
+                <a onClick={moveTo4}>Roadmap</a>
+                <a onClick={moveTo5}>Mint</a>
+                <a onClick={moveTo6}>Poker Ambassador</a>
+                <a onClick={moveTo7}>Team</a>
+                <a onClick={moveTo8}>FAQ</a>
+              </div>
+              <a href="https://discord.gg/pCWB6bEg7F">
+                <FaDiscord />
+              </a>
+              <div className="header-right-mob">
+                <MdMenu className="mob-header-open" />
+                <MdClose className="mob-header-close" />
+              </div>
             </div>
           </div>
         </div>
@@ -352,7 +362,8 @@ const App = () => {
               <h1>
                 Welcome to <br /> Crypto Holdem
               </h1>
-              <h2>Launching: January, 2022</h2>
+              <h2> Your favorite hand could win you $1,000,000</h2>
+              <span></span>
               <ul>
                 <li>
                   The Game-changing NL Poker NFT that will give you real-life
@@ -360,15 +371,14 @@ const App = () => {
                 </li>
                 <li> You have a favorite starting poker hand?</li>
                 <li>
-                  You ever had a chance to win up to <b>$1,000,000</b> with it?
+                  You ever had a chance to win up to <b>$1,000,000</b> with it?{" "}
                 </li>
                 <li>
-                  What about getting <b>1:1</b> training from a WPT
-                  professional?
+                  What about getting 1:1 training from a WPT professional?
                 </li>
                 <li>
-                  How about a chance to win Entry to the{" "}
-                  <b>2022 WSOP Main Event</b>?
+                  How about a chance to win Entry to the
+                  <b> 2022 WSOP Main Event</b>
                 </li>
               </ul>
               {/* <main>
@@ -384,63 +394,42 @@ const App = () => {
               </main> */}
             </div>
             <div className="hero-right">
-              <img src={Artwork6} alt="Artwork"></img>
+              <img src={Artwork3} alt="Artwork"></img>
             </div>
           </div>
         </div>
       </div>
 
       {/* Description Section */}
-      <div className="description section">
-        <div className="box">
-          <div className="description-content">
-            <h6 className="section-heading">
-              <BsSuitSpadeFill />
-              YOU DO NOW! <BsSuitSpadeFill />
-            </h6>
-            <p>
-              Crypto Holdem is a collection of 9,282 NL Poker NFT hands.
-              Ownership will double as your membership card into our community
-              which grants access to member-only benefits such as private
-              events, Las Vegas Poker Tournaments, WSOP tournament buy-ins,
-              profit-sharing, and more.{" "}
-            </p>
+      <div className="description grd-parent-container">
+        <img src={Banner3} className="grd-img" alt="" />
+        <div className="grd-overlay-box-green section">
+          <div className="box">
+            <div className="description-content">
+              <h6 className="section-heading">
+                Real Like Poker Access Like Never Before!
+              </h6>
+              <p>
+                Crypto Holdem is a collection of 9,282 NL Poker NFT hands.
+                Ownership will double as your membership card into our community
+                which grants access to member-only benefits such as private
+                events, Las Vegas Poker Tournaments, WSOP tournament buy-ins,
+                profit-sharing, and more.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Utility Section */}
       <div className="utility section" id="section2">
+        <h6 className="section-heading">
+          <BsFillSuitDiamondFill />
+          Real Gameplay Utility
+          <BsFillSuitDiamondFill />
+        </h6>
         <div className="box">
-          <h6 className="section-heading">
-            <BsSuitSpadeFill />
-            Real Gameplay Utility
-            <BsSuitSpadeFill />
-          </h6>
           <div className="utility-content">
-            <div className="utility-grid-1">
-              <div className="ug1-left">
-                <h2> The Artwork</h2>
-                <p>
-                  There are 1,326 potential unique starting hands in No-Limit
-                  Texas Holdem. Crypto Holdem (CH) will utilize 7 decks to
-                  create 9,282 “hole cards.”
-                  <br />
-                  <br />
-                  Your “hole cards” will be used to play bi-weekly poker hands
-                  dealt by our Poker Ambassador(s) and televised via our YouTube
-                  and Instagram Live Channels.
-                </p>
-              </div>
-              <div className="ug1-right">
-                <main>
-                  <img src={Artwork1} alt="Artwork" />
-                  <img src={Artwork2} alt="Artwork" />
-                  <img src={Artwork3} alt="Artwork" />
-                  <img src={Artwork4} alt="Artwork" />
-                </main>
-              </div>
-            </div>
             <div className="utility-grid-2">
               <div className="ug2-left">
                 <img src={Artwork1} alt="Artwork" />
@@ -460,21 +449,59 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div className="utility-grid-2">
-              <div className="ug2-right">
-                <h2>Poker Access Like Never Before!</h2>
-                <p>#1,000,000 to Crypto Holdem Holders…</p>
-                <br />
-                <ul>
-                  <li>$250,000 Giveaways on Day #1</li>
-                  <li>$25,000 1:1 WSOP Final Table Diamond Hands NFT</li>
-                  <li>Access to VIP Poker Tournaments</li>
-                  <li>1:1 Training with WPT Professionals</li>
-                  <li>And that’s just the start…</li>
-                </ul>
+          </div>
+        </div>
+        <div className="imp-sec grd-parent-container">
+          <img src={Banner2} className="grd-img" alt="" />
+          <div className="grd-overlay-box-red section">
+            <div className="box">
+              <div className="utility-grid-1">
+                <div className="ug1-left">
+                  <h3>$1,000,000 to Crypto Holdem Holders Year 1</h3>
+                  <h3>3 Fully Paid Entries into the 2022 WSOP Main Event</h3>
+                  <h3>$250,000 Giveaways on Mint Day</h3>
+                  <h3>
+                    $25,000 to our 1:1 WSOP Final Table Diamond Hands NFT Winner
+                  </h3>
+                  <h3>Access to VIP Poker Tournaments</h3>
+
+                  <h3>
+                    Entry to the 2022 Crypto Holdem Poker Tournament in Las
+                    Vegas
+                  </h3>
+                  <h3>1:1 Training with WPT Professionals</h3>
+                  <h3>And that’s just the start…</h3>
+                </div>
+                <div className="ug1-right">
+                  <main>
+                    <img src={Artwork1} alt="Artwork" />
+                    <img src={Artwork2} alt="Artwork" />
+                    <img src={Artwork3} alt="Artwork" />
+                    <img src={Artwork4} alt="Artwork" />
+                  </main>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="utility-content">
+            <div className="utility-grid-2">
               <div className="ug2-left">
                 <img src={Artwork2} alt="Artwork" />
+              </div>
+              <div className="ug2-right">
+                <h2> The Artwork</h2>
+                <p>
+                  There are 1,326 potential unique starting hands in No-Limit
+                  Texas Holdem. Crypto Holdem (CH) will utilize 7 decks to
+                  create 9,282 “hole cards.”
+                  <br />
+                  <br />
+                  Your “hole cards” will be used to play bi-weekly poker hands
+                  dealt by our Poker Ambassador(s) and televised via our YouTube
+                  and Instagram Live Channels.
+                </p>
               </div>
             </div>
           </div>
@@ -482,31 +509,34 @@ const App = () => {
       </div>
 
       {/* Specs Section */}
-      <div className="specs section" id="section3">
-        <div className="box">
-          <div className="specs-content">
-            <h6 className="section-heading">
-              <BsSuitSpadeFill />
-              Specs <BsSuitSpadeFill />
-            </h6>
-            <p>
-              Every Crypto Holdem "Whole cards" are unique and programmatically
-              generated with 13 possible traits, including the hand, backdrop,
-              table, lucky charm, accessories and more.
-              <br />
-              <br />
-              Crypto Holdem NFTs are stored as ERC-721 tokens on the Ethereum
-              blockchain and hosted on IPFS. Purchase price information is
-              located in the #FAQ section of our Discord.
-              <br />
-              <br />
-              Members-only areas such as{" "}
-              <a href="https://discord.gg/HRk9gnScQ4">(HOLDEM HOLDERS)</a>, will
-              require verification using proof of ownership with their Metamask
-              Wallet.
-              <br />
-              <br />
-            </p>
+      <div className="specs grd-parent-container" id="section3">
+        <img src={Banner1} className="grd-img" alt="" />
+        <div className="grd-overlay-box-green section">
+          <div className="box">
+            <div className="specs-content">
+              <h6 className="section-heading">
+                <BsFillSuitDiamondFill />
+                Specs <BsFillSuitDiamondFill />
+              </h6>
+              <p>
+                Every Crypto Holdem "Whole cards" are unique and
+                programmatically generated with 13 possible traits, including
+                the hand, backdrop, table, lucky charm, accessories and more.
+                <br />
+                <br />
+                Crypto Holdem NFTs are stored as ERC-721 tokens on the Ethereum
+                blockchain and hosted on IPFS. Purchase price information is
+                located in the #FAQ section of our Discord.
+                <br />
+                <br />
+                Members-only areas such as{" "}
+                <a href="https://discord.gg/HRk9gnScQ4">(HOLDEM HOLDERS)</a>,
+                will require verification using proof of ownership with their
+                Metamask Wallet.
+                <br />
+                <br />
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -515,8 +545,8 @@ const App = () => {
       <div className="roadmap section" id="section4">
         <div className="box">
           <h6 className="section-heading">
-            <BsSuitSpadeFill /> Road Map
-            <BsSuitSpadeFill />
+            <BsFillSuitDiamondFill /> Road Map
+            <BsFillSuitDiamondFill />
           </h6>
           <div class="roadmap-content">
             <div class="road-map-line"></div>
@@ -595,11 +625,12 @@ const App = () => {
         <div className="box">
           <div className="mint-content">
             <h6 className="section-heading">
-              <BsSuitSpadeFill /> January 2022 Launch <BsSuitSpadeFill />
+              <BsFillSuitDiamondFill /> January 2022 Launch{" "}
+              <BsFillSuitDiamondFill />
             </h6>
-            <p>Whale Pre-Sale @ 1 ETH</p>
-            <p>Whitelist @ 0.55 ETH</p>
-            <p>Public Sale @ 0.75 ETH</p>
+            <p>Whale Pre-Sale @ TBD</p>
+            <p>Whitelist @ TBD</p>
+            <p>Public Sale @ TBD</p>
             <br />
             <p>
               <a href="">
@@ -642,8 +673,8 @@ const App = () => {
         <div className="box">
           <div className="team-section">
             <h6 className="section-heading">
-              <BsSuitSpadeFill />
-              Meet the Team <BsSuitSpadeFill />
+              <BsFillSuitDiamondFill />
+              Meet the Team <BsFillSuitDiamondFill />
             </h6>
             <div className="team-grid">
               <div className="team-card">
@@ -703,8 +734,8 @@ const App = () => {
           <div className="faq-content">
             <h6 className="section-heading">
               {" "}
-              <BsSuitSpadeFill />
-              Frequently Asked Questions <BsSuitSpadeFill />
+              <BsFillSuitDiamondFill />
+              Frequently Asked Questions <BsFillSuitDiamondFill />
             </h6>
             <div className="faq-q-a">
               <div className="faq-box" onClick={q1}>
@@ -798,7 +829,7 @@ const App = () => {
                 </div>
                 <div className="faq-a a7 a">
                   <h6>
-                    Yes, there will be a 12% OpeSea royalty, with 3% going back
+                    Yes, there will be a 10% OpeSea royalty, with 3% going back
                     to the Crypto Holdem holder community through prizes,
                     meetups, parties, pot disbursements, and much more.
                   </h6>
@@ -839,16 +870,19 @@ const App = () => {
             </div>
             <div className="footer-right">
               <span>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCLIhq1B9PjXD74-6f54UgLw">
                   <FaYoutube />
                 </a>
-                <a href="">
+                <a href="https://www.reddit.com/r/Crypto_HoldemNFT/">
+                  <FaRedditAlien />
+                </a>
+                <a href="https://www.instagram.com/cryptoholdemnft/">
                   <FaInstagram />
                 </a>
-                <a href="">
+                <a href="https://discord.gg/pCWB6bEg7F">
                   <FaDiscord />
                 </a>
-                <a href="">
+                <a href="https://twitter.com/CryptoholdemNFT">
                   <FaTwitter />
                 </a>
               </span>
