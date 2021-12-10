@@ -353,6 +353,10 @@ const App = () => {
             </div>
           </div>
         </div>
+        <div className="bub-header">
+          <BsFillSuitDiamondFill /> $1,000,000 in Giveaways{" "}
+          <BsFillSuitDiamondFill />
+        </div>
       </div>
 
       {/* Hero Section */}
