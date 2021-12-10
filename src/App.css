@@ -252,7 +252,7 @@ button {
   margin: 2.5rem 0;
 }
 .hero-left h1 {
-  font-size: 4.25rem;
+  font-size: 5rem;
   line-height: 5.5rem;
   font-weight: 600;
   /* color: var(--green); */
@@ -263,7 +263,7 @@ button {
   font-size: 2rem;
   margin: 1.5rem 0 0 0;
   color: var(--bgc);
-  font-weight: 400;
+  font-weight: 700;
 }
 .hero-left ul li {
   margin: 0 0 1rem 0;

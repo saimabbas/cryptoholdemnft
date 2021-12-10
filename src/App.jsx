@@ -379,7 +379,7 @@ const App = () => {
                 </li>
                 <li>
                   How about a chance to win Entry to the
-                  <b> 2022 WSOP Main Event</b>
+                  <b> 2022 WSOP Main Event.</b>
                 </li>
               </ul>
               {/* <main>
@@ -749,14 +749,15 @@ const App = () => {
                 </div>
                 <div className="faq-a a1 a">
                   <ul>
-                    <li>Whale Pre-sale 1.0 ETH</li>
-                    <li>White-list .55 TH</li>
-                    <li>Public Sale: .75 ETH </li>
+                    <li>Whale Pre-Sale- TBD</li>
+                    <li>Whitelist- TBD</li>
+                    <li>Public Sale- TBD</li>
                     <li>
+                      Please join our{" "}
                       <a href="https://discord.gg/pCWB6bEg7F">
-                        Join our Discord
+                        Discord Channel
                       </a>{" "}
-                      for the perks of each level
+                      for updates regarding this in the coming weeks.
                     </li>
                   </ul>
                 </div>
