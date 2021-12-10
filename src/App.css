@@ -226,17 +226,22 @@ button {
   justify-content: center;
 }
 .bub-header {
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
   color: var(--red);
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 2.25rem;
-  padding: 1.25rem 0;
+  font-size: 2.5rem;
+  height: 10rem;
   font-family: "PT Serif Caption", serif;
-  height: 5rem;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, 2.75rem); */
+  text-transform: uppercase;
 }
 .bub-header svg {
   margin: 0 1.75rem;
@@ -244,11 +249,11 @@ button {
 /* Hero Section */
 .hero {
   width: 100%;
-  /* background-color: var(--green); */
+  position: relative;
 }
 .hero-content {
   width: 100%;
-  min-height: calc(100vh - 11.5rem);
+  min-height: calc(100vh - 16.5rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -256,7 +261,7 @@ button {
 }
 .hero-left {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -266,6 +271,7 @@ button {
   height: 1px;
   background-color: var(--red);
   margin: 2.5rem 0;
+  display: flex;
 }
 .hero-left h1 {
   font-size: 5rem;
@@ -301,6 +307,12 @@ button {
 .hero-left ul li span b {
   margin: 0 0.35rem;
 }
+.hero-left h5 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--red);
+  margin: 1.5rem 0 0 0;
+}
 .hero-content p {
   font-size: 1.75rem;
   margin: 3.5rem 0;
@@ -312,9 +324,10 @@ button {
 .hero-right {
   width: 100%;
   height: 100%;
-  display: flex;
+  /*   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  padding: 5rem 0 0 0;
 }
 .hero-right img {
   width: 100%;
@@ -392,10 +405,14 @@ button {
   color: var(--red);
   margin: 0 0 0.75rem 0;
 }
-.utility h3 {
+.ug1-left ul li {
   font-size: 2.5rem;
   color: var(--bgc);
   margin: 0 0 0.75rem 0;
+  list-style-image: url("./assets/spade-dark.svg");
+  list-style-position: inside;
+  margin: 0.75rem 0 0 0;
+  font-weight: 700;
 }
 .utility p {
   font-size: 2.25rem;
@@ -846,6 +863,17 @@ button {
 }
 /* Responsiveness */
 @media only screen and (max-width: 1000px) {
+  .hero-right {
+    padding: 0 0 2.5rem 0;
+  }
+  .hero-left > span {
+    background-color: transparent;
+    margin: 1.5rem 0;
+  }
+  .bub-header {
+    height: unset;
+    margin: 5rem 0 0 0;
+  }
   .section {
     padding: 3.5rem 0;
   }
@@ -1081,5 +1109,11 @@ button {
   .footer-right span a {
     margin: 0 1.75rem 0 0;
     font-size: 2.25rem;
+  }
+  .bub-header {
+    font-size: 2rem;
+  }
+  .bub-header svg {
+    margin: 0 1.5rem;
   }
 }

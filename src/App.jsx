@@ -353,14 +353,14 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="bub-header">
-          <BsFillSuitDiamondFill /> $1,000,000 in Giveaways{" "}
-          <BsFillSuitDiamondFill />
-        </div>
       </div>
 
       {/* Hero Section */}
       <div className="hero">
+        <div className="bub-header">
+          <BsFillSuitDiamondFill /> $1,000,000 in Giveaways{" "}
+          <BsFillSuitDiamondFill />
+        </div>
         <div className="box">
           <div className="hero-content">
             <div className="hero-left">
@@ -386,17 +386,7 @@ const App = () => {
                   <b> 2022 WSOP Main Event.</b>
                 </li>
               </ul>
-              {/* <main>
-                <a href="https://twitter.com/CryptoholdemNFT">
-                  <FaTwitter />
-                </a>
-                <a href="https://www.instagram.com/cryptoholdemnft/">
-                  <FaInstagram />
-                </a>
-                <a href="https://discord.gg/pCWB6bEg7F">
-                  <FaDiscord />
-                </a>
-              </main> */}
+              <h5>YOU DO NOW!</h5>
             </div>
             <div className="hero-right">
               <img src={Artwork3} alt="Artwork"></img>
@@ -462,20 +452,23 @@ const App = () => {
             <div className="box">
               <div className="utility-grid-1">
                 <div className="ug1-left">
-                  <h3>$1,000,000 to Crypto Holdem Holders Year 1</h3>
-                  <h3>3 Fully Paid Entries into the 2022 WSOP Main Event</h3>
-                  <h3>$250,000 Giveaways on Mint Day</h3>
-                  <h3>
-                    $25,000 to our 1:1 WSOP Final Table Diamond Hands NFT Winner
-                  </h3>
-                  <h3>Access to VIP Poker Tournaments</h3>
+                  <ul>
+                    <li>$1,000,000 to Crypto Holdem Holders Year 1</li>
+                    <li>3 Fully Paid Entries into the 2022 WSOP Main Event</li>
+                    <li>$250,000 Giveaways on Mint Day</li>
+                    <li>
+                      $25,000 to our 1:1 WSOP Final Table Diamond Hands NFT
+                      Winner
+                    </li>
+                    <li>Access to VIP Poker Tournaments</li>
 
-                  <h3>
-                    Entry to the 2022 Crypto Holdem Poker Tournament in Las
-                    Vegas
-                  </h3>
-                  <h3>1:1 Training with WPT Professionals</h3>
-                  <h3>And that’s just the start…</h3>
+                    <li>
+                      Entry to the 2022 Crypto Holdem Poker Tournament in Las
+                      Vegas
+                    </li>
+                    <li>1:1 Training with WPT Professionals</li>
+                    <li>And that’s just the start…</li>
+                  </ul>
                 </div>
                 <div className="ug1-right">
                   <main>
