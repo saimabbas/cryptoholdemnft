@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import Maria from "./assets/maria.jpg";
 import Banner1 from "./assets/banner-1.png";
 import Banner2 from "./assets/banner-2.png";
-import Banner3 from "./assets/banner-4.png";
+import Banner3 from "./assets/banner-3.png";
+import Banner4 from "./assets/banner-4.png";
 import Logo from "./assets/Logo/Logo1.png";
 import Artwork1 from "./assets/Artwork/Artwork1.jpeg";
 import Artwork2 from "./assets/Artwork/Artwork2.jpeg";
@@ -510,7 +511,7 @@ const App = () => {
 
       {/* Specs Section */}
       <div className="specs grd-parent-container" id="section3">
-        <img src={Banner1} className="grd-img" alt="" />
+        <img src={Banner4} className="grd-img" alt="" />
         <div className="grd-overlay-box-green section">
           <div className="box">
             <div className="specs-content">
@@ -621,22 +622,25 @@ const App = () => {
       </div>
 
       {/* Mint Section */}
-      <div className="mint section" id="section5">
-        <div className="box">
-          <div className="mint-content">
-            <h6 className="section-heading">
-              <BsFillSuitDiamondFill /> January 2022 Launch{" "}
-              <BsFillSuitDiamondFill />
-            </h6>
-            <p>Whale Pre-Sale @ TBD</p>
-            <p>Whitelist @ TBD</p>
-            <p>Public Sale @ TBD</p>
-            <br />
-            <p>
-              <a href="">
-                <FaDiscord />
-              </a>
-            </p>
+      <div className="mint grd-parent-container" id="section5">
+        <img src={Banner3} className="grd-img" alt="" />
+        <div className="grd-overlay-box-green section">
+          <div className="box">
+            <div className="mint-content">
+              <h6 className="section-heading">
+                <BsFillSuitDiamondFill /> January 2022 Launch{" "}
+                <BsFillSuitDiamondFill />
+              </h6>
+              <p>Whale Pre-Sale @ TBD</p>
+              <p>Whitelist @ TBD</p>
+              <p>Public Sale @ TBD</p>
+              <br />
+              <p>
+                <a href="">
+                  <FaDiscord />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

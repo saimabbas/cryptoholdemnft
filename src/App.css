@@ -467,7 +467,7 @@ button {
   background-color: var(--light);
 }
 .mint h6 {
-  color: var(--green);
+  color: var(--red);
 }
 .mint p {
   width: 100%;
