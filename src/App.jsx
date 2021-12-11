@@ -335,11 +335,11 @@ const App = () => {
             <div className="header-right-parent">
               <div className="header-right">
                 <a onClick={moveTo1}>Welcome</a>
+                <a onClick={moveTo6}>Poker Ambassador</a>
                 <a onClick={moveTo2}>Utility</a>
                 <a onClick={moveTo3}>Specs</a>
                 <a onClick={moveTo4}>Roadmap</a>
                 <a onClick={moveTo5}>Mint</a>
-                <a onClick={moveTo6}>Poker Ambassador</a>
                 <a onClick={moveTo7}>Team</a>
                 <a onClick={moveTo8}>FAQ</a>
               </div>
@@ -357,40 +357,48 @@ const App = () => {
 
       {/* Hero Section */}
       <div className="hero">
-        <div className="bub-header">
-          <BsFillSuitDiamondFill /> $1,000,000 in Giveaways{" "}
-          <BsFillSuitDiamondFill />
-        </div>
         <div className="box">
           <div className="hero-content">
             <div className="hero-left">
-              <h1>
-                Welcome to <br /> Crypto Holdem
-              </h1>
-              <h2> Your favorite hand could win you $1,000,000</h2>
+              <h1>Welcome to Crypto Holdem</h1>
+              <img src={Artwork3} alt="Artwork"></img>
+              <h2>
+                {" "}
+                Where Your Starting Hand Could Win Massive Prizes.
+                <br />
+                The more hands you collect, the better your chances are of
+                winning prizes and poker access like never before.
+              </h2>
               <span></span>
+              <h2>
+                Our game-changing No-Limit Texas Holdem NFT will give you real
+                life game utility like never before.
+              </h2>
               <ul>
                 <li>
-                  The Game-changing NL Poker NFT that will give you real-life
-                  game utility like never before.
+                  $1,000,000 distributed back to Crypto Holdem Holders in 2022
                 </li>
-                <li> You have a favorite starting poker hand?</li>
+                <li>$250,000 on Mint Day</li>
+                <li> $25,000 to 1:1 “Diamond Hands Pocket Aces”</li>
+                <li> $10,000 to 9 “WSOP Final Table” Starting Hands</li>
                 <li>
-                  You ever had a chance to win up to <b>$1,000,000</b> with it?{" "}
+                  3 Fully Paid Entries into 2022 World Series of Poker Main
+                  Event (entry, airfare, hotel)
                 </li>
                 <li>
-                  What about getting 1:1 training from a WPT professional?
+                  Entry to the 2022 Crypto Holdem Poker Tournament in Las Vegas
                 </li>
-                <li>
-                  How about a chance to win Entry to the
-                  <b> 2022 WSOP Main Event.</b>
-                </li>
+                <li>3% Redistributed back to Crypto Holdem Holders</li>
+                <li>1:1 Training from WPT Poker Professionals </li>
+                <li>Las Vegas and Los Angeles Private Poker Events</li>
+                <li>VIP Poker Access across the World</li>
+                <li>And so much more…</li>
               </ul>
               <h5>YOU DO NOW!</h5>
             </div>
-            <div className="hero-right">
+            {/* <div className="hero-right">
               <img src={Artwork3} alt="Artwork"></img>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -400,17 +408,25 @@ const App = () => {
         <img src={Banner3} className="grd-img" alt="" />
         <div className="grd-overlay-box-green section">
           <div className="box">
-            <div className="description-content">
-              <h6 className="section-heading">
-                Real Like Poker Access Like Never Before!
-              </h6>
-              <p>
-                Crypto Holdem is a collection of 9,282 NL Poker NFT hands.
-                Ownership will double as your membership card into our community
-                which grants access to member-only benefits such as private
-                events, Las Vegas Poker Tournaments, WSOP tournament buy-ins,
-                profit-sharing, and more.
-              </p>
+            <div className="utility-grid-1">
+              <div className="ug1-left">
+                <h6>Real Like Poker Access Like Never Before!</h6>
+                <p>
+                  Crypto Holdem is a collection of 9,282 NL Poker NFT hands.
+                  Ownership will double as your membership card into our
+                  community which grants access to member-only benefits such as
+                  private events, Las Vegas Poker Tournaments, WSOP tournament
+                  buy-ins, profit-sharing, and more.
+                </p>
+              </div>
+              <div className="ug1-right">
+                <main>
+                  <img src={Artwork1} alt="Artwork" />
+                  <img src={Artwork2} alt="Artwork" />
+                  <img src={Artwork3} alt="Artwork" />
+                  <img src={Artwork4} alt="Artwork" />
+                </main>
+              </div>
             </div>
           </div>
         </div>
@@ -420,7 +436,7 @@ const App = () => {
       <div className="utility section" id="section2">
         <h6 className="section-heading">
           <BsFillSuitDiamondFill />
-          Real Gameplay Utility
+          Real Life Poker Utility
           <BsFillSuitDiamondFill />
         </h6>
         <div className="box">
@@ -430,75 +446,40 @@ const App = () => {
                 <img src={Artwork1} alt="Artwork" />
               </div>
               <div className="ug2-right">
-                <h2> Trade up for a better hand?</h2>
-                <p>
-                  Prior to the FLOP, TURN and the RIVER, we will allow 10
-                  minutes, between each card (30 minutes total), for trades via
-                  OpenSea. Once the RIVER card is dealt, there will be at least
-                  112 winning hands (16 possible pairs x 7 decks).
-                  <br />
-                  <br />
-                  From there, your rarity scores (both high and low) will come
-                  into play and determine which hands took the Crypto Holdem
-                  Pot!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="imp-sec grd-parent-container">
-          <img src={Banner2} className="grd-img" alt="" />
-          <div className="grd-overlay-box-red section">
-            <div className="box">
-              <div className="utility-grid-1">
-                <div className="ug1-left">
-                  <ul>
-                    <li>$1,000,000 to Crypto Holdem Holders Year 1</li>
-                    <li>3 Fully Paid Entries into the 2022 WSOP Main Event</li>
-                    <li>$250,000 Giveaways on Mint Day</li>
-                    <li>
-                      $25,000 to our 1:1 WSOP Final Table Diamond Hands NFT
-                      Winner
-                    </li>
-                    <li>Access to VIP Poker Tournaments</li>
-
-                    <li>
-                      Entry to the 2022 Crypto Holdem Poker Tournament in Las
-                      Vegas
-                    </li>
-                    <li>1:1 Training with WPT Professionals</li>
-                    <li>And that’s just the start…</li>
-                  </ul>
-                </div>
-                <div className="ug1-right">
-                  <main>
-                    <img src={Artwork1} alt="Artwork" />
-                    <img src={Artwork2} alt="Artwork" />
-                    <img src={Artwork3} alt="Artwork" />
-                    <img src={Artwork4} alt="Artwork" />
-                  </main>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="utility-content">
-            <div className="utility-grid-2">
-              <div className="ug2-left">
-                <img src={Artwork2} alt="Artwork" />
-              </div>
-              <div className="ug2-right">
-                <h2> The Artwork</h2>
+                <h2>How Does Crypto Holdem work?</h2>
                 <p>
                   There are 1,326 potential unique starting hands in No-Limit
-                  Texas Holdem. Crypto Holdem (CH) will utilize 7 decks to
-                  create 9,282 “hole cards.”
+                  Texas Holdem. Crypto Holdem will utilize 7 decks of cards to
+                  create 9,282 “hole cards.” <br />
+                  Your one-of-a-kind digital art will act are you starting hand.{" "}
+                  <br />
+                  The more starting hands you MINT, the better your odds are of
+                  winning. <br />
+                  From there, Maria Ho will conduct weekly on-camera poker hands
+                  via our social media channels and your starting hand could win
+                  you instant prizes! <br />
+                  Don’t like the hand you were dealt? Don’t fold it, trade it!{" "}
+                  <br />
+                  Prior to the FLOP, TURN and the RIVER, we will allow 10
+                  minutes, between each card (30 minutes total), for trades via
+                  OpenSea. Once the RIVER card is dealt, winners will be chosen
+                  based on their winning hands and that week’s rarity score.
                   <br />
                   <br />
-                  Your “hole cards” will be used to play bi-weekly poker hands
-                  dealt by our Poker Ambassador(s) and televised via our YouTube
-                  and Instagram Live Channels.
+                  <i>
+                    The Crypto Holdem Team will set aside $1,000,000 from MINT
+                    day sales to redistribute back into the Community.
+                  </i>
+                  <br />
+                  <i>
+                    Additionally, 3% of all royalty sales from OpenSea will be
+                    redistributed back into the Community as well.
+                  </i>
+                  <br />
+                  <i>
+                    This is not your typical small poker game, this is the big
+                    leagues…
+                  </i>
                 </p>
               </div>
             </div>

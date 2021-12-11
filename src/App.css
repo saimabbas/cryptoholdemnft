@@ -253,17 +253,19 @@ button {
 }
 .hero-content {
   width: 100%;
-  min-height: calc(100vh - 16.5rem);
+  padding: 5rem 0;
+  /*   min-height: calc(100vh - 16.5rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 10rem;
+  grid-gap: 10rem; */
 }
 .hero-left {
   width: 100%;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   justify-content: center;
 }
 .hero-left > span {
@@ -274,25 +276,28 @@ button {
   display: flex;
 }
 .hero-left h1 {
-  font-size: 5rem;
+  font-size: 7.5rem;
   line-height: 5.5rem;
   font-weight: 600;
-  /* color: var(--green); */
-  color: transparent;
-  -webkit-text-stroke: 0.35px var(--bgc);
+  color: var(--red);
+  /* color: transparent; */
+  /* -webkit-text-stroke: 2px var(--red); */
 }
 .hero-left h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 1.5rem 0 0 0;
   color: var(--bgc);
   font-weight: 700;
+}
+.hero-left ul {
+  margin: 2.5rem 0;
 }
 .hero-left ul li {
   margin: 0 0 1rem 0;
   list-style-image: url("./assets/diamond-red.svg");
   list-style-position: inside;
   color: var(--green);
-  font-size: 1.85rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .hero-left ul li svg {
@@ -308,10 +313,9 @@ button {
   margin: 0 0.35rem;
 }
 .hero-left h5 {
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: var(--red);
-  margin: 1.5rem 0 0 0;
 }
 .hero-content p {
   font-size: 1.75rem;
@@ -329,6 +333,14 @@ button {
   justify-content: center; */
   padding: 5rem 0 0 0;
 }
+.hero-left img {
+  width: 75%;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  border: 2px solid var(--bgc);
+  margin: 5rem 0;
+}
 .hero-right img {
   width: 100%;
   height: 65%;
@@ -343,15 +355,13 @@ button {
   margin: 0 0 5rem 0;
 }
 .description h6 {
+  font-size: 3.5rem;
   color: var(--red);
+  margin: 0 0 0.75rem 0;
 }
 .description p {
   font-size: 2.25rem;
   color: var(--bgc);
-  width: 75%;
-  font-weight: 600;
-  margin: 0 auto;
-  text-align: center;
 }
 
 /* Utility Section */
@@ -428,9 +438,9 @@ button {
 .utility-grid-2 {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: auto;
-  grid-gap: 10rem;
+  grid-gap: 5rem;
   margin: 7.5rem 0;
 }
 .ug2-left {
