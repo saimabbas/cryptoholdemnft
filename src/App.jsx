@@ -361,9 +361,12 @@ const App = () => {
         <div className="box">
           <div className="hero-content">
             <div className="hero-left">
-              <h1>Welcome to Crypto Holdem</h1>
-              <img src={Artwork3} alt="Artwork"></img>
-              <h2>
+              <h1 className="russo">Welcome to Crypto Holdem</h1>
+              <main>
+                <img src={Artwork3} alt="Artwork"></img>
+                <img src={Artwork3} alt="Artwork"></img>
+              </main>
+              <h2 className="russo">
                 Where Your Starting Hand Could Win Massive Prizes.
                 <br />
                 The more hands you collect, the better your chances are of
@@ -375,7 +378,7 @@ const App = () => {
                 <img src={Artwork7} alt="Artwork" />
                 <img src={Artwork4} alt="Artwork" />
               </div>
-              <h2>
+              <h2 className="russo">
                 Our game-changing No-Limit Texas Holdem NFT will give you real
                 life game utility like never before.
               </h2>
@@ -414,11 +417,13 @@ const App = () => {
           <div className="box">
             <div className="utility-grid-1">
               <div className="ug1-left">
-                <h2>Game-Changing Crypto Holdem Holder Rewards</h2>
+                <h2 className="russo">
+                  Game-Changing Crypto Holdem Holder Rewards
+                </h2>
                 <ul>
                   <li>
-                    Needs to say $1,000,000 distributed back to Crypto Holdem
-                    Holders in 2022
+                    $1,00,000 redistributed back to our Crypto Holdem Holders in
+                    2022
                   </li>
                   <li>$250,000 on Mint Day</li>
                   <li> $25,000 to 1:1 “Diamond Hands Pocket Aces”</li>
@@ -467,7 +472,7 @@ const App = () => {
             <div className="amb-grid">
               <img src={Maria} alt="" />
               <div className="amb-grid-right">
-                <h2>Poker Ambassador - Maria Ho</h2>
+                <h2 className="russo">Poker Ambassador - Maria Ho</h2>
                 <p>
                   To make sure we are honoring the game we all love and
                   optimizing the gameplay experience, we’ve enlisted the help of
@@ -501,7 +506,7 @@ const App = () => {
                 <img src={Artwork1} alt="Artwork" />
               </div>
               <div className="ug2-right">
-                <h2>How Does Crypto Holdem work?</h2>
+                <h2 className="russo">How Does Crypto Holdem work?</h2>
                 <p>
                   There are 1,326 potential unique starting hands in No-Limit
                   Texas Holdem. Crypto Holdem will utilize 7 decks of cards to
