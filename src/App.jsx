@@ -11,6 +11,7 @@ import Artwork3 from "./assets/Artwork/Artwork3.jpeg";
 import Artwork4 from "./assets/Artwork/Artwork4.jpeg";
 import Artwork5 from "./assets/Artwork/Artwork5.jpeg";
 import Artwork6 from "./assets/Artwork/Artwork6.jpeg";
+import Artwork7 from "./assets/Artwork/artwork8.png";
 import Team1 from "./assets/Team/Team1.jpg";
 import Team2 from "./assets/Team/Team2.jpg";
 import Team3 from "./assets/Team/Team3.jfif";
@@ -363,18 +364,22 @@ const App = () => {
               <h1>Welcome to Crypto Holdem</h1>
               <img src={Artwork3} alt="Artwork"></img>
               <h2>
-                {" "}
                 Where Your Starting Hand Could Win Massive Prizes.
                 <br />
                 The more hands you collect, the better your chances are of
                 winning prizes and poker access like never before.
               </h2>
-              <span></span>
+              <div className="heroleft-img">
+                <img src={Artwork1} alt="Artwork" />
+                <img src={Artwork2} alt="Artwork" />
+                <img src={Artwork7} alt="Artwork" />
+                <img src={Artwork4} alt="Artwork" />
+              </div>
               <h2>
                 Our game-changing No-Limit Texas Holdem NFT will give you real
                 life game utility like never before.
               </h2>
-              <ul>
+              {/* <ul>
                 <li>
                   $1,000,000 distributed back to Crypto Holdem Holders in 2022
                 </li>
@@ -393,8 +398,7 @@ const App = () => {
                 <li>Las Vegas and Los Angeles Private Poker Events</li>
                 <li>VIP Poker Access across the World</li>
                 <li>And so much more…</li>
-              </ul>
-              <h5>YOU DO NOW!</h5>
+              </ul> */}
             </div>
             {/* <div className="hero-right">
               <img src={Artwork3} alt="Artwork"></img>
@@ -410,22 +414,73 @@ const App = () => {
           <div className="box">
             <div className="utility-grid-1">
               <div className="ug1-left">
-                <h6>Real Like Poker Access Like Never Before!</h6>
-                <p>
-                  Crypto Holdem is a collection of 9,282 NL Poker NFT hands.
-                  Ownership will double as your membership card into our
-                  community which grants access to member-only benefits such as
-                  private events, Las Vegas Poker Tournaments, WSOP tournament
-                  buy-ins, profit-sharing, and more.
-                </p>
+                <h2>Game-Changing Crypto Holdem Holder Rewards</h2>
+                <ul>
+                  <li>
+                    Needs to say $1,000,000 distributed back to Crypto Holdem
+                    Holders in 2022
+                  </li>
+                  <li>$250,000 on Mint Day</li>
+                  <li> $25,000 to 1:1 “Diamond Hands Pocket Aces”</li>
+                  <li> $10,000 to 9 “WSOP Final Table” Starting Hands</li>
+                  <li>
+                    3 Fully Paid Entries into 2022 World Series of Poker Main
+                    Event (entry, airfare, hotel)
+                  </li>
+                </ul>
               </div>
               <div className="ug1-right">
                 <main>
                   <img src={Artwork1} alt="Artwork" />
-                  <img src={Artwork2} alt="Artwork" />
-                  <img src={Artwork3} alt="Artwork" />
-                  <img src={Artwork4} alt="Artwork" />
                 </main>
+              </div>
+            </div>
+            <div className="utility-grid-1">
+              <div className="ug1-right">
+                <main>
+                  <img src={Artwork2} alt="Artwork" />
+                </main>
+              </div>
+              <div className="ug1-left">
+                <ul>
+                  <li>
+                    Entry to the 2022, 2023 and 2024 Crypto Holdem Tournament in
+                    Las Vegas
+                  </li>
+                  <li>1:1 Training from WPT Poker Professionals</li>
+                  <li>
+                    Access to Las Vegas and Los Angeles Private Poker Events
+                  </li>
+                  <li>VIP Poker Access Across the World</li>
+                  <li>And so much more…</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Ambassador Section */}
+      <div className="amb section" id="section6">
+        <div className="box">
+          <div className="amb-content">
+            <div className="amb-grid">
+              <img src={Maria} alt="" />
+              <div className="amb-grid-right">
+                <h2>Poker Ambassador - Maria Ho</h2>
+                <p>
+                  To make sure we are honoring the game we all love and
+                  optimizing the gameplay experience, we’ve enlisted the help of
+                  our Poker Ambassador, none other than WPT Hall of Famer Maria
+                  Ho.
+                  <br />
+                  <br />
+                  Maria will be hosting our Utility Gameplay poker hands,
+                  answering your poker questions in our Twitter and Discord
+                  communities, attending Crypto Holdem Events, and even playing
+                  live, in-person poker games with our Crypto Holdem community
+                  in Las Vegas.
+                </p>
               </div>
             </div>
           </div>
@@ -618,33 +673,6 @@ const App = () => {
                   <FaDiscord />
                 </a>
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Ambassador Section */}
-      <div className="amb section" id="section6">
-        <div className="box">
-          <div className="amb-content">
-            <div className="amb-grid">
-              <img src={Maria} alt="" />
-              <div className="amb-grid-right">
-                <h2>Poker Ambassador - Maria Ho</h2>
-                <p>
-                  To make sure we are honoring the game we all love and
-                  optimizing the gameplay experience, we’ve enlisted the help of
-                  our Poker Ambassador, none other than WPT Hall of Famer Maria
-                  Ho.
-                  <br />
-                  <br />
-                  Maria will be hosting our Utility Gameplay poker hands,
-                  answering your poker questions in our Twitter and Discord
-                  communities, attending Crypto Holdem Events, and even playing
-                  live, in-person poker games with our Crypto Holdem community
-                  in Las Vegas.
-                </p>
-              </div>
             </div>
           </div>
         </div>

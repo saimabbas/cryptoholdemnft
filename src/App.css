@@ -280,14 +280,16 @@ button {
   line-height: 5.5rem;
   font-weight: 600;
   color: var(--red);
-  /* color: transparent; */
-  /* -webkit-text-stroke: 2px var(--red); */
+  color: transparent; 
+  -webkit-text-stroke: 2px var(--red);
 }
 .hero-left h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin: 1.5rem 0 0 0;
   color: var(--bgc);
   font-weight: 700;
+  color: transparent; 
+  -webkit-text-stroke: 2px var(--red);
 }
 .hero-left ul {
   margin: 2.5rem 0;
@@ -334,8 +336,8 @@ button {
   padding: 5rem 0 0 0;
 }
 .hero-left img {
-  width: 75%;
-  height: 40rem;
+  width: 50%;
+  /* height: 40rem; */
   object-fit: cover;
   border-radius: 1.5rem;
   border: 2px solid var(--bgc);
@@ -349,7 +351,23 @@ button {
   /* box-shadow: 0 0 10px var(--bgc); */
   border: 2px solid var(--bgc);
 }
-
+.heroleft-img{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  background: var(--dark);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+}
+.heroleft-img img {
+  border-radius: 1.5rem;
+  width: 100%;
+  border: none;
+  margin: 0;
+}
 /* Description Section  */
 .description {
   margin: 0 0 5rem 0;
@@ -363,7 +381,37 @@ button {
   font-size: 2.25rem;
   color: var(--bgc);
 }
+.ug1-left ul {
+  margin: 2.5rem 0;
+}
+.ug1-left ul li {
+  margin: 0 0 1rem 0;
+  list-style-image: url("./assets/diamond-red.svg");
+  list-style-position: inside;
+  color: var(--green);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.ug1-left ul li svg {
+  font-size: 2.25rem;
+  margin: 0.5rem 1rem 0 0;
+  color: var(--green);
+}
+.ug1-left ul li span {
+  width: 100%;
+  display: flex;
+}
+.ug1-left ul li span b {
+  margin: 0 0.35rem;
+}
+.ug1-left h2 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin: 0 0 1.5rem 0;
+    color: transparent; 
+  -webkit-text-stroke: 2px var(--white);
 
+}
 /* Utility Section */
 .utility {
   width: 100%;
@@ -375,21 +423,22 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 10rem;
+  margin-bottom: 4rem;
 }
 .ug1-right {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .ug1-right main {
   width: 85%;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
-  background: var(--dark);
-  padding: 1rem;
+  background: var(--dark); 
+  padding: 1rem; */
   border-radius: 2rem;
 }
 .ug1-right main img {
@@ -414,6 +463,8 @@ button {
   font-size: 3.5rem;
   color: var(--red);
   margin: 0 0 0.75rem 0;
+  color: transparent; 
+  -webkit-text-stroke: 2px var(--red);
 }
 .ug1-left ul li {
   font-size: 2.5rem;
@@ -638,6 +689,8 @@ button {
   font-size: 3.5rem;
   color: var(--red);
   margin: 0 0 1.5rem 0;
+   color: transparent; 
+  -webkit-text-stroke: 2px var(--red);
 }
 .amb-grid-right p {
   font-size: 2.25rem;
