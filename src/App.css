@@ -308,7 +308,7 @@ button {
   font-size: 7.5rem;
   font-weight: 600;
   color: transparent;
-  color: var(--red);
+  color: var(--white);
   position: relative;
   text-decoration: underline;
 }

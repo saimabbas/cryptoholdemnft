@@ -19,6 +19,7 @@ import Artwork12 from "./assets/Artwork/Artwork12.jpg";
 import Artwork13 from "./assets/Artwork/Artwork13.png";
 import Artwork14 from "./assets/Artwork/Artwork14.png";
 import Artwork15 from "./assets/Artwork/Artwork15.png";
+import Artwork16 from "./assets/Artwork/Artwork16.jpeg";
 import Team1 from "./assets/Team/Team1.jpg";
 import Team2 from "./assets/Team/Team2.jpg";
 import Team3 from "./assets/Team/Team3.jfif";
@@ -589,7 +590,7 @@ const App = () => {
           <div className="utility-content">
             <div className="utility-grid-2">
               <div className="ug2-left">
-                <img src={Artwork1} alt="Artwork" />
+                <img src={Artwork16} alt="Artwork" />
               </div>
               <div className="ug2-right">
                 <h2 className="russo">How Does Crypto Holdem work?</h2>
