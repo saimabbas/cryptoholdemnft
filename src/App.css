@@ -135,18 +135,7 @@ button {
   font-weight: 700;
   color: var(--white);
   font-family: "Russo One", sans-serif;
-  position: relative;
-}
-.section-heading h6::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--white);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .rotate {
   transform: rotate(-180deg);
@@ -318,18 +307,7 @@ button {
   color: transparent;
   color: var(--red);
   /* -webkit-text-stroke: 1.5px var(--red); */
-  position: relative;
-}
-.hero-left h1::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 1.5rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .hero-left h2 {
   font-size: 3.5rem;
@@ -337,19 +315,8 @@ button {
   color: var(--bgc);
   font-weight: 700;
   color: var(--red);
-  position: relative;
+  text-decoration: underline;
   /* -webkit-text-stroke: 1.5px var(--red); */
-}
-.hero-left h2::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
 }
 .hero-left h4 {
   font-size: 3.5rem;
@@ -357,19 +324,8 @@ button {
   color: var(--bgc);
   font-weight: 700;
   color: var(--red);
-  position: relative;
+  text-decoration: underline;
   /* -webkit-text-stroke: 1.5px var(--red); */
-}
-.hero-left h4::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
 }
 .hero-left h3 {
   font-size: 3.5rem;
