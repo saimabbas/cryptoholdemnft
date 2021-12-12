@@ -44,7 +44,7 @@ body {
 }
 .box {
   width: 100%;
-  max-width: 1349px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 3.5rem;
 }
@@ -116,6 +116,7 @@ button {
 .section-heading {
   font-size: 3.75rem;
   font-weight: 700;
+  text-decoration: underline;
   color: var(--white);
   margin: 0 0 2.5rem 0;
   width: 100%;
@@ -130,23 +131,12 @@ button {
   font-size: 2.5rem;
   color: var(--red);
 }
-.section-heading h6{
+.section-heading h6 {
   font-size: 3.75rem;
   font-weight: 700;
   color: var(--white);
   font-family: "Russo One", sans-serif;
   position: relative;
-}
-.section-heading h6::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--white);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
 }
 .rotate {
   transform: rotate(-180deg);
@@ -251,7 +241,6 @@ button {
   justify-content: center;
 }
 .bub-header {
-  /* background-color: var(--dark); */
   color: var(--red);
   font-weight: 700;
   display: flex;
@@ -261,11 +250,6 @@ button {
   font-size: 2.5rem;
   height: 10rem;
   font-family: "PT Serif Caption", serif;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: translate(0, 2.75rem); */
   text-transform: uppercase;
 }
 .bub-header svg {
@@ -278,12 +262,15 @@ button {
 }
 .hero-content {
   width: 100%;
+  padding: 0 0 5rem 0;
+}
+.main-hero {
+  min-height: calc(100vh - 6.5rem);
   padding: 5rem 0;
-  /*   min-height: calc(100vh - 16.5rem);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-left {
   width: 100%;
@@ -296,13 +283,19 @@ button {
 .hero-left main {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 0;
-  border-radius: 1.5rem;
-  border: 2px solid var(--bgc);
-  margin: 5rem 0;
+  grid-gap: 1rem;
+  margin: 7.5rem 0 5rem 0;
   overflow: hidden;
+  background: var(--dark);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.hero-left img {
+  width: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
 }
 .hero-left > span {
   width: 12.5rem;
@@ -313,23 +306,11 @@ button {
 }
 .hero-left h1 {
   font-size: 7.5rem;
-  line-height: 5.5rem;
   font-weight: 600;
   color: transparent;
   color: var(--red);
-  /* -webkit-text-stroke: 1.5px var(--red); */
   position: relative;
-}
-.hero-left h1::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 1.5rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .hero-left h2 {
   font-size: 3.5rem;
@@ -338,18 +319,7 @@ button {
   font-weight: 700;
   color: var(--red);
   position: relative;
-  /* -webkit-text-stroke: 1.5px var(--red); */
-}
-.hero-left h2::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .hero-left h4 {
   font-size: 3.5rem;
@@ -358,18 +328,7 @@ button {
   font-weight: 700;
   color: var(--red);
   position: relative;
-  /* -webkit-text-stroke: 1.5px var(--red); */
-}
-.hero-left h4::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .hero-left h3 {
   font-size: 3.5rem;
@@ -377,7 +336,6 @@ button {
   color: var(--bgc);
   font-weight: 700;
   color: var(--red);
-  /* -webkit-text-stroke: 1.5px var(--red); */
 }
 .hero-left ul {
   margin: 2.5rem 0;
@@ -418,29 +376,20 @@ button {
 .hero-right {
   width: 100%;
   height: 100%;
-  /*   display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: 5rem 0 0 0;
-}
-.hero-left img {
-  width: 100%;
-  /* height: 40rem; */
-  object-fit: cover;
 }
 .hero-right img {
   width: 100%;
   height: 65%;
   object-fit: cover;
   border-radius: 1.5rem;
-  /* box-shadow: 0 0 10px var(--bgc); */
   border: 2px solid var(--bgc);
 }
 .heroleft-img {
-  width: 70%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-gap: 1rem;
   background: var(--dark);
   padding: 1rem;
@@ -494,12 +443,10 @@ button {
   color: var(--white);
   margin: 0 0 1.5rem 0;
   color: var(--red);
-  /* -webkit-text-stroke: 1px var(--white); */
 }
 /* Utility Section */
 .utility {
   width: 100%;
-  /* background-color: var(--light); */
 }
 .utility-grid-1 {
   width: 100%;
@@ -517,12 +464,6 @@ button {
 }
 .ug1-right main {
   width: 85%;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1rem;
-  background: var(--dark); 
-  padding: 1rem; */
   border-radius: 2rem;
 }
 .ug1-right main img {
@@ -548,7 +489,6 @@ button {
   color: var(--red);
   margin: 0 0 0.75rem 0;
   color: var(--red);
-  /* -webkit-text-stroke: 1.5px var(--red); */
 }
 .utility h3 {
   font-size: 2rem;
@@ -556,18 +496,7 @@ button {
   margin: 2rem 0 0.75rem 0;
   color: var(--red);
   position: relative;
-  /* -webkit-text-stroke: 1.5px var(--red); */
-}
-.utility h3::before {
-  content: "";
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(0, 0.25rem);
-  transition: var(--trns);
+  text-decoration: underline;
 }
 .ug1-left ul li {
   font-size: 2.5rem;
@@ -824,7 +753,7 @@ button {
 }
 .team-card {
   border-radius: 1.5rem;
-  background-color: var(--light);
+  background-color: var(--dark);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1037,8 +966,29 @@ button {
 .footer-right > a:hover {
   text-decoration: underline;
 }
+
+/* Animations Essentials Styles */
+.main-header-anim {
+  opacity: 0;
+}
 /* Responsiveness */
 @media only screen and (max-width: 1000px) {
+  .main-hero {
+    min-height: unset;
+    padding: 0;
+  }
+  .hero-left main,
+  .heroleft-img {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5rem 0;
+  }
+  .hero-left main > :nth-child(4),
+  .heroleft-img > :nth-child(4) {
+    display: none;
+  }
+  .hero-left h1 {
+    font-size: 5rem;
+  }
   .hero-right {
     padding: 0 0 2.5rem 0;
   }
@@ -1113,7 +1063,7 @@ button {
     height: unset;
     grid-template-columns: 1fr;
     grid-gap: 3.5rem;
-    padding: 5rem 0 0 0;
+    padding: 5rem 0;
   }
   .hero-left {
     align-items: center;
@@ -1150,6 +1100,12 @@ button {
   }
 }
 @media only screen and (max-width: 800px) {
+  .utility-grid-1-mob > :nth-child(1) {
+    order: 2;
+  }
+  .utility-grid-1-mob > :nth-child(2) {
+    order: 1;
+  }
   .description p,
   .specs-content p {
     width: 100%;
@@ -1199,11 +1155,12 @@ button {
     font-size: 2rem;
   }
   .roadmap-text-box {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 1.5rem;
   }
   .roadmap-text-box h6 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin: 0 0 0.75rem 0;
   }
   .roadmap-box-right {
     margin: 2.5rem 0;
@@ -1226,6 +1183,19 @@ button {
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero-left main,
+  .heroleft-img {
+    grid-template-columns: 1fr;
+    margin: 5rem 0;
+  }
+  .hero-left main > :nth-child(2),
+  .hero-left main > :nth-child(3),
+  .hero-left main > :nth-child(4),
+  .heroleft-img > :nth-child(2),
+  .heroleft-img > :nth-child(3),
+  .heroleft-img > :nth-child(4) {
+    display: none;
+  }
   .hero-left h1 {
     font-size: 3.5rem;
   }
@@ -1239,7 +1209,7 @@ button {
   .specs-content p {
     font-size: 1.75rem;
   }
-  .section-heading {
+  .section-heading h6 {
     font-size: 2.5rem;
     line-height: 3.5rem;
   }
@@ -1291,5 +1261,42 @@ button {
   }
   .bub-header svg {
     margin: 0 1.5rem;
+  }
+  .hero-left h2 {
+    font-size: 2.5rem;
+  }
+  .hero-left h4 {
+    font-size: 2.5rem;
+  }
+  .hero-left h3 {
+    font-size: 2.5rem;
+  }
+  .ug1-left h2 {
+    font-size: 2.5rem;
+  }
+  .utility-grid-1,
+  .utility-grid-2 {
+    margin: 0;
+  }
+  .ug1-left ul li {
+    font-size: 2rem;
+  }
+  .ug1-left ul {
+    margin: 0;
+  }
+  .utility-grid-1-mob {
+    margin: 5rem 0 0 0;
+  }
+  .amb-grid-right h2 {
+    font-size: 2.5rem;
+  }
+  .amb-grid-right p {
+    font-size: 2rem;
+  }
+  .utility h2 {
+    font-size: 2.5rem;
+  }
+  .ug2-right ul li {
+    font-size: 2rem;
   }
 }

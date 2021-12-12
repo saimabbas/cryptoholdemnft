@@ -17,6 +17,8 @@ import Artwork10 from "./assets/Artwork/Artwork10.jpg";
 import Artwork11 from "./assets/Artwork/Artwork11.jpg";
 import Artwork12 from "./assets/Artwork/Artwork12.jpg";
 import Artwork13 from "./assets/Artwork/Artwork13.png";
+import Artwork14 from "./assets/Artwork/Artwork14.png";
+import Artwork15 from "./assets/Artwork/Artwork15.png";
 import Team1 from "./assets/Team/Team1.jpg";
 import Team2 from "./assets/Team/Team2.jpg";
 import Team3 from "./assets/Team/Team3.jfif";
@@ -33,7 +35,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { MdMenu, MdClose, MdExpandMore, MdEast } from "react-icons/md";
-import { Power4 } from "gsap/dist/gsap";
+import { Power4, Power1, Back } from "gsap/dist/gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -63,6 +65,68 @@ const App = () => {
         display: "none",
       });
     });
+
+    var headerAnim = gsap.timeline({
+      duration: 0.85,
+    });
+    headerAnim
+      .fromTo(
+        ".header-content",
+        {
+          opacity: 0,
+          y: "-2.5rem",
+        },
+        {
+          ease: Power1.easeInOut,
+          opacity: 1,
+          y: 0,
+        }
+      )
+      .fromTo(
+        ".main-header-anim",
+
+        {
+          opacity: 0,
+          y: "-2.5rem",
+        },
+
+        {
+          ease: Power1.easeInOut,
+          opacity: 1,
+          y: 0,
+          delay: 1,
+        },
+        ">-0.25"
+      )
+      .fromTo(
+        ".hero-img-box-anim",
+        {
+          opacity: 0,
+          y: "-2.5rem",
+        },
+        {
+          ease: Power1.easeInOut,
+          opacity: 1,
+          y: 0,
+        },
+        ">-0.25"
+      )
+      .fromTo(
+        ".hero-img-anim",
+        {
+          opacity: 0,
+          rotate: "5deg",
+        },
+        {
+          opacity: 1,
+          rotate: 0,
+          duration: 1,
+          stagger: {
+            ease: Power1.easeInOut,
+            each: 0.25,
+          },
+        }
+      );
   }, []);
 
   /* Desktop Anchoring Funtions */
@@ -315,10 +379,6 @@ const App = () => {
     $(".a7").slideToggle(350);
     $(".q7 svg").toggleClass("rotate");
   };
-  const q8 = () => {
-    $(".a8").slideToggle(350);
-    $(".q8 svg").toggleClass("rotate");
-  };
 
   return (
     <div className="cryptoholdemnft" id="section1">
@@ -326,18 +386,17 @@ const App = () => {
       <div className="header">
         <div className="mob-header">
           <a onClick={moveTo1Mob}>Welcome</a>
+          <a onClick={moveTo6Mob}>Poker Ambassador</a>
           <a onClick={moveTo2Mob}>Utility</a>
           <a onClick={moveTo3Mob}>Specs</a>
           <a onClick={moveTo4Mob}>Roadmap</a>
           <a onClick={moveTo5Mob}>Mint</a>
-          <a onClick={moveTo6Mob}>Poker Ambassador</a>
           <a onClick={moveTo7Mob}>Team</a>
           <a onClick={moveTo8Mob}>FAQ</a>
         </div>
         <div className="box">
           <div className="header-content">
             <img className="header-left" src={Logo} alt="img" />
-
             <div className="header-right-parent">
               <div className="header-right">
                 <a onClick={moveTo1}>Welcome</a>
@@ -366,11 +425,33 @@ const App = () => {
         <div className="box">
           <div className="hero-content">
             <div className="hero-left">
-              <h1 className="russo">Welcome to Crypto Holdem</h1>
-              <main>
-                <img src={Artwork3} alt="Artwork"></img>
-                <img src={Artwork9} alt="Artwork"></img>
-              </main>
+              <div className="main-hero">
+                <h1 className="russo main-header-anim">
+                  Welcome to Crypto Holdem
+                </h1>
+                <main className="hero-img-box-anim">
+                  <img
+                    className="hero-img-anim"
+                    src={Artwork3}
+                    alt="Artwork"
+                  ></img>
+                  <img
+                    className="hero-img-anim"
+                    src={Artwork9}
+                    alt="Artwork"
+                  ></img>
+                  <img
+                    className="hero-img-anim"
+                    src={Artwork14}
+                    alt="Artwork"
+                  ></img>
+                  <img
+                    className="hero-img-anim"
+                    src={Artwork15}
+                    alt="Artwork"
+                  ></img>
+                </main>
+              </div>
               <h2 className="russo">
                 Where Your Starting Hand Could Win Massive Prizes.
               </h2>
@@ -420,7 +501,7 @@ const App = () => {
         <img src={Banner3} className="grd-img" alt="" />
         <div className="grd-overlay-box-green section">
           <div className="box">
-            <div className="utility-grid-1">
+            <div className="utility-grid-1 ">
               <div className="ug1-left">
                 <h2 className="russo">
                   Game-Changing Crypto Holdem Holder Rewards
@@ -445,7 +526,7 @@ const App = () => {
                 </main>
               </div>
             </div>
-            <div className="utility-grid-1">
+            <div className="utility-grid-1 utility-grid-1-mob">
               <div className="ug1-right">
                 <main>
                   <img src={Artwork13} alt="Artwork" />
