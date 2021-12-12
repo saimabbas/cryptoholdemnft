@@ -285,11 +285,11 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 0.75rem;
   margin: 7.5rem 0 5rem 0;
   overflow: hidden;
   background: var(--dark);
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 2rem;
 }
 .hero-left img {
@@ -390,9 +390,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 0.75rem;
   background: var(--dark);
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 2rem;
   margin: 2rem 0;
 }
@@ -497,6 +497,7 @@ button {
   color: var(--red);
   position: relative;
   text-decoration: underline;
+  text-align: center;
 }
 .ug1-left ul li {
   font-size: 2.5rem;
