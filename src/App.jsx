@@ -12,6 +12,11 @@ import Artwork4 from "./assets/Artwork/Artwork4.jpeg";
 import Artwork5 from "./assets/Artwork/Artwork5.jpeg";
 import Artwork6 from "./assets/Artwork/Artwork6.jpeg";
 import Artwork7 from "./assets/Artwork/artwork8.png";
+import Artwork9 from "./assets/Artwork/Artwork9.jpg";
+import Artwork10 from "./assets/Artwork/Artwork10.jpg";
+import Artwork11 from "./assets/Artwork/Artwork11.jpg";
+import Artwork12 from "./assets/Artwork/Artwork12.jpg";
+import Artwork13 from "./assets/Artwork/Artwork13.png";
 import Team1 from "./assets/Team/Team1.jpg";
 import Team2 from "./assets/Team/Team2.jpg";
 import Team3 from "./assets/Team/Team3.jfif";
@@ -364,24 +369,24 @@ const App = () => {
               <h1 className="russo">Welcome to Crypto Holdem</h1>
               <main>
                 <img src={Artwork3} alt="Artwork"></img>
-                <img src={Artwork3} alt="Artwork"></img>
+                <img src={Artwork9} alt="Artwork"></img>
               </main>
               <h2 className="russo">
                 Where Your Starting Hand Could Win Massive Prizes.
-                <br />
-                The more hands you collect, the better your chances are of
-                winning prizes and poker access like never before.
               </h2>
+              <h4 className="russo">
+                The more hands you collect, the better your chances of winning!
+              </h4>
               <div className="heroleft-img">
-                <img src={Artwork1} alt="Artwork" />
-                <img src={Artwork2} alt="Artwork" />
+                <img src={Artwork10} alt="Artwork" />
+                <img src={Artwork11} alt="Artwork" />
                 <img src={Artwork7} alt="Artwork" />
                 <img src={Artwork4} alt="Artwork" />
               </div>
-              <h2 className="russo">
+              <h3 className="russo">
                 Our game-changing No-Limit Texas Holdem NFT will give you real
                 life game utility like never before.
-              </h2>
+              </h3>
               {/* <ul>
                 <li>
                   $1,000,000 distributed back to Crypto Holdem Holders in 2022
@@ -436,14 +441,14 @@ const App = () => {
               </div>
               <div className="ug1-right">
                 <main>
-                  <img src={Artwork1} alt="Artwork" />
+                  <img src={Artwork12} alt="Artwork" />
                 </main>
               </div>
             </div>
             <div className="utility-grid-1">
               <div className="ug1-right">
                 <main>
-                  <img src={Artwork2} alt="Artwork" />
+                  <img src={Artwork13} alt="Artwork" />
                 </main>
               </div>
               <div className="ug1-left">
@@ -496,7 +501,7 @@ const App = () => {
       <div className="utility section" id="section2">
         <h6 className="section-heading">
           <BsFillSuitDiamondFill />
-          Real Life Poker Utility
+          <h6>Real Life Poker Utility</h6>
           <BsFillSuitDiamondFill />
         </h6>
         <div className="box">
@@ -507,40 +512,26 @@ const App = () => {
               </div>
               <div className="ug2-right">
                 <h2 className="russo">How Does Crypto Holdem work?</h2>
-                <p>
-                  There are 1,326 potential unique starting hands in No-Limit
-                  Texas Holdem. Crypto Holdem will utilize 7 decks of cards to
-                  create 9,282 “hole cards.” <br />
-                  Your one-of-a-kind digital art will act are you starting hand.{" "}
-                  <br />
+                <ul>
+                  <li>
+                    There are 1,326 potential unique starting hands in No-Limit
+                    Texas Holdem.
+                  </li>
+                  <li>
+                    Crypto Holdem will utilize 7 decks of cards to create 9,282
+                    “hole cards” and your one-of-a-kind digital art will act are
+                    you starting hand.
+                  </li>
+                  <li>
+                    Maria Ho will deal weekly on-camera poker hands and your
+                    “hole cards” could win you instant prizes and access to the
+                    poker world like never before.
+                  </li>
+                </ul>
+                <h3 className="russo">
                   The more starting hands you MINT, the better your odds are of
-                  winning. <br />
-                  From there, Maria Ho will conduct weekly on-camera poker hands
-                  via our social media channels and your starting hand could win
-                  you instant prizes! <br />
-                  Don’t like the hand you were dealt? Don’t fold it, trade it!{" "}
-                  <br />
-                  Prior to the FLOP, TURN and the RIVER, we will allow 10
-                  minutes, between each card (30 minutes total), for trades via
-                  OpenSea. Once the RIVER card is dealt, winners will be chosen
-                  based on their winning hands and that week’s rarity score.
-                  <br />
-                  <br />
-                  <i>
-                    The Crypto Holdem Team will set aside $1,000,000 from MINT
-                    day sales to redistribute back into the Community.
-                  </i>
-                  <br />
-                  <i>
-                    Additionally, 3% of all royalty sales from OpenSea will be
-                    redistributed back into the Community as well.
-                  </i>
-                  <br />
-                  <i>
-                    This is not your typical small poker game, this is the big
-                    leagues…
-                  </i>
-                </p>
+                  winning.
+                </h3>
               </div>
             </div>
           </div>
@@ -555,12 +546,13 @@ const App = () => {
             <div className="specs-content">
               <h6 className="section-heading">
                 <BsFillSuitDiamondFill />
-                Specs <BsFillSuitDiamondFill />
+                Specs
+                <BsFillSuitDiamondFill />
               </h6>
               <p>
-                Every Crypto Holdem "Whole cards" are unique and
-                programmatically generated with 13 possible traits, including
-                the hand, backdrop, table, lucky charm, accessories and more.
+                Every Crypto Holdem "Hole Cards" are unique and programmatically
+                generated with 13 possible traits, including the hand, backdrop,
+                table, lucky charm, accessories and more.
                 <br />
                 <br />
                 Crypto Holdem NFTs are stored as ERC-721 tokens on the Ethereum
@@ -568,7 +560,7 @@ const App = () => {
                 located in the #FAQ section of our Discord.
                 <br />
                 <br />
-                Members-only areas such as{" "}
+                Members-only areas such as
                 <a href="https://discord.gg/HRk9gnScQ4">(HOLDEM HOLDERS)</a>,
                 will require verification using proof of ownership with their
                 Metamask Wallet.
@@ -584,7 +576,8 @@ const App = () => {
       <div className="roadmap section" id="section4">
         <div className="box">
           <h6 className="section-heading">
-            <BsFillSuitDiamondFill /> Road Map
+            <BsFillSuitDiamondFill />
+            <h6>Road Map</h6>
             <BsFillSuitDiamondFill />
           </h6>
           <div class="roadmap-content">
@@ -666,7 +659,8 @@ const App = () => {
           <div className="box">
             <div className="mint-content">
               <h6 className="section-heading">
-                <BsFillSuitDiamondFill /> January 2022 Launch{" "}
+                <BsFillSuitDiamondFill />
+                January 2022 Launch
                 <BsFillSuitDiamondFill />
               </h6>
               <p>Whale Pre-Sale @ TBD</p>
@@ -689,7 +683,8 @@ const App = () => {
           <div className="team-section">
             <h6 className="section-heading">
               <BsFillSuitDiamondFill />
-              Meet the Team <BsFillSuitDiamondFill />
+              <h6>Meet the Team</h6>
+              <BsFillSuitDiamondFill />
             </h6>
             <div className="team-grid">
               <div className="team-card">
@@ -748,9 +743,9 @@ const App = () => {
         <div className="box">
           <div className="faq-content">
             <h6 className="section-heading">
-              {" "}
               <BsFillSuitDiamondFill />
-              Frequently Asked Questions <BsFillSuitDiamondFill />
+              <h6>Frequently Asked Questions</h6>
+              <BsFillSuitDiamondFill />
             </h6>
             <div className="faq-q-a">
               <div className="faq-box" onClick={q1}>
